@@ -1,0 +1,4 @@
+Hypervisor TCP control server started (IP 127.0.0.1 port 62603).
+Hypervisor: closing control sockets.
+Hypervisor: closing remote client connections.
+Hypervisor: stopped.
