@@ -4,7 +4,7 @@ This Ansible project help to do inline analysis while an incident triggered on n
 
 Offline Analysis can also doable as outputs saved in CSV file.
 
-All needed files have been upload, for case base secanrio can demonstrate on GNS3 all related file have been upload too.
+All needed files have been uploaded, for case base secanrio can be demonstrate on GNS3 all related files have been uploaded too.
 
 *****Requirements*****
 
