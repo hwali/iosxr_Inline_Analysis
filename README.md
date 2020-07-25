@@ -1,4 +1,4 @@
-*****YAML IOSXR Inline_Analysis Incident/Event Management*****
+*****YAML IOSXR Inline & Offline Analysis Incident/Event Management*****
 
 This Ansible project help to do inline analysis while an incident triggered on network level, for testing simple commands have been taken to analyze and output results are conditional which pin point alarming situation.
 
