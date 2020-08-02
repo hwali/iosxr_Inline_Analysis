@@ -1,10 +1,10 @@
 *****YAML IOSXR Inline & Offline Analysis Incident/Event Management*****
 
-This Ansible project help to do inline analysis while an incident triggered on network level, for testing simple commands have been taken to analyze and output results are conditional which pin point alarming situation.
+This Ansible project help to do inline analysis while an incident triggered on network level, for testing simple commands have been taken to analyze and output results are conditional which pin point alarming situation
 
-Offline Analysis can also doable as outputs saved in CSV file.
+Offline Analysis can also be doable as outputs saved in CSV file on completion of running playbook
 
-All needed files have been uploaded, for case base secanrio can be demonstrate on GNS3 all related files have been uploaded too.
+All needed files have been uploaded, for case base secanrio can be demonstrate on GNS3
 
 *****Requirements*****
 
@@ -27,11 +27,13 @@ GPLv3
 
 *****Steps to accomplish Inline & Offline Analysis for Event/Incident Management are below*****
 
-- Ansible Controller installed either on Redhat (Centos) for this you need VMware Workstation or Windows but it lengthy process to setup
+- Ansible Controller installed either on Redhat (Centos7) on top of VMware Workstation or in Windows but it lengthy process to setup
 - GNS3 with IOSXRv capability, - GNS3 Topology uploaded
-- Configuration setup for IOSXR are added in Topology_IOSXRv_Ansible
-- Logical connectivity between Ansible controller and GNS Nodes (IOSXRv)
+- Configuration for IOSXR added in folder "Topology_IOSXRv_Ansible" this will help to setup IOSXR enviorment
+- Logical connectivity between Ansible controller and GNS Nodes (IOSXRv) are must
 - Name resolution either via DNS or via local Host file, I used host file which added as well but for enterprise or SP we need for sure DNS capability
+- Make sure Interfaces are manually configure on Controller, DHCP should be disable as host file need to alter on each change
+- In case code need to modified i am using ATOM, you may use any one of your choice
 
 
 *****Command*****
