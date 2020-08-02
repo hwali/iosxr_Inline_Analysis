@@ -25,7 +25,7 @@ YAML
 GPLv3
 
 
-*****Steps to accomplish Inline & Offline Analysis for Event/Incident Management are below*****
+*****Prerequisite Steps to accomplish Inline & Offline Analysis for Event/Incident Management are below*****
 
 - Ansible Controller installed either on Redhat (Centos7) on top of VMware Workstation or in Windows but it lengthy process to setup
 - GNS3 with IOSXRv capability, - GNS3 Topology uploaded
