@@ -42,7 +42,7 @@ time ansible-playbook IOSXRtest.yml >>>time help to find out how quick code impl
 *****Note*****
 
 Shared code designed on basic commands but we could moderate or enhaned this code and build multiple scenarios on base of our routine case studies on networks or technologies
-YML Playbook can be import in CMLv2
+,added YML Playbook can be import in CMLv2
 
 
 *****Result*****
