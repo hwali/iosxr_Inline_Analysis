@@ -49,9 +49,14 @@ Shared code designed on basic commands but we could moderate or enhaned this cod
 
 [root@osboxes9 ansible]# time ansible-playbook IOSXRtest.yml
 
-PLAY [XR Router Troubleshooting] **********************************************************************************************************************************************************************************
+PLAY [XR Router Troubleshooting] 
 
-TASK [Core Troubleshooting Commands] ******************************************************************************************************************************************************************************
+***********************************************************************************************
+
+TASK [Core Troubleshooting Commands] 
+
+***********************************************************************************************
+
 ok: [IOSXR_West] => (item=show clock)
 
 ok: [IOSXR_West] => (item=show platform)
@@ -69,7 +74,9 @@ ok: [IOSXR_South] => (item=show log | i, ch)
 
 *****Sample of Desired Output*****
 
-TASK [Platform Hardware Check] ************************************************************************************************************************************************************************************
+TASK [Platform Hardware Check] 
+
+*********************************************************************************************
 
 skipping: [IOSXR_South]
 
