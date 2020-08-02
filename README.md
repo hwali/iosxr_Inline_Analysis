@@ -53,31 +53,37 @@ PLAY [XR Router Troubleshooting] ***********************************************
 
 TASK [Core Troubleshooting Commands] ******************************************************************************************************************************************************************************
 ok: [IOSXR_West] => (item=show clock)
-ok: [IOSXR_South] => (item=show clock)
+
 ok: [IOSXR_West] => (item=show platform)
-ok: [IOSXR_South] => (item=show platform)
+
 ok: [IOSXR_West] => (item=show redundancy)
-ok: [IOSXR_South] => (item=show redundancy)
+
 ok: [IOSXR_West] => (item=show proc cpu | ex "0%      0%       0%")
-ok: [IOSXR_South] => (item=show proc cpu | ex "0%      0%       0%")
-ok: [IOSXR_West] => (item=show memory sum location all | in "node|Pyhsical|available")
+
 ok: [IOSXR_South] => (item=show memory sum location all | in "node|Pyhsical|available")
-ok: [IOSXR_West] => (item=show int description | i down)
+
 ok: [IOSXR_South] => (item=show int description | i down)
-ok: [IOSXR_West] => (item=show log | i, ch)
+
 ok: [IOSXR_South] => (item=show log | i, ch)
 
 
 *****Sample of Desired Output*****
 
 TASK [Platform Hardware Check] ************************************************************************************************************************************************************************************
+
 skipping: [IOSXR_South]
+
 skipping: [IOSXR_West]
 
-TASK [Redundancy Check] *******************************************************************************************************************************************************************************************
+TASK [Redundancy Check] **************************************************************************************************************************************************************************************
+
 ok: [IOSXR_West] => {
+
     "msg": "IOSXR_West show_redundancy indicates card is not present: "
+    
 }
+
 ok: [IOSXR_South] => {
+
     "msg": "IOSXR_South show_redundancy indicates card is not present: "
 }
