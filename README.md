@@ -26,22 +26,27 @@ GPLv3
 
 
 *****Steps to accomplish Inline & Offline Analysis for Event/Incident Management are below*****
-- Ansible Controller installed either on Redhat (Centos) or Window
+
+- Ansible Controller installed either on Redhat (Centos) for this you need VMware Workstation or Windows but it lengthy process to setup
 - GNS3 with IOSXRv capability, - GNS3 Topology uploaded
-- Logical connectivity between Ansible controller and GNS Nodes example (IOSXRv)
-- Name resolution either via DNS or via local Host file
+- Configuration setup for IOSXR are added in Topology_IOSXRv_Ansible
+- Logical connectivity between Ansible controller and GNS Nodes (IOSXRv)
+- Name resolution either via DNS or via local Host file, I used host file which added as well but for enterprise or SP we need for sure DNS capability
 
 
 *****Command*****
+
 time ansible-playbook IOSXRtest.yml >>>time help to find out how quick code implemented in running environment to acquire desire results
 
 
 *****Note*****
+
 Shared code designed on basic commands but we could moderate or enhaned this code and build multiple scenarios on base of our routine case studies on networks or technologies
 YML Playbook can be import in CMLv2
 
 
 *****Result*****
+
 [root@osboxes9 ansible]# time ansible-playbook IOSXRtest.yml
 
 PLAY [XR Router Troubleshooting] **********************************************************************************************************************************************************************************
@@ -62,7 +67,9 @@ ok: [IOSXR_South] => (item=show int description | i down)
 ok: [IOSXR_West] => (item=show log | i, ch)
 ok: [IOSXR_South] => (item=show log | i, ch)
 
+
 *****Sample of Desired Output*****
+
 TASK [Platform Hardware Check] ************************************************************************************************************************************************************************************
 skipping: [IOSXR_South]
 skipping: [IOSXR_West]
